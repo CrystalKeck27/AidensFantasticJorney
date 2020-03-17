@@ -34,7 +34,7 @@ displayName="Aiden's Fantastic Jorney" #mandatory
 credits="Thanks for this mod goes to Java and chocolate chips" #optional
 
 # A text field displayed in the mod UI
-authors="Aiden Keck" #optional
+authors="Aiden Keck & Austin Metz" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
