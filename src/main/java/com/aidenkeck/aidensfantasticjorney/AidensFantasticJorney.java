@@ -1,10 +1,13 @@
 package com.aidenkeck.aidensfantasticjorney;
 
+import com.aidenkeck.aidensfantasticjorney.init.ModBlocks;
+import com.aidenkeck.aidensfantasticjorney.init.ModItems;
 import com.aidenkeck.aidensfantasticjorney.setup.ClientProxy;
 import com.aidenkeck.aidensfantasticjorney.setup.IProxy;
 import com.aidenkeck.aidensfantasticjorney.setup.ServerProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -48,8 +51,12 @@ public class AidensFantasticJorney {
     public static class RegistryEvents {
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
-            // register blocks here
-            LOGGER.info("HELLO from Register Block");
+            blockRegistryEvent.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
+        }
+
+        @SubscribeEvent
+        public static void onItemsRegistry(final RegistryEvent.Register<Item> itemRegistryEvent) {
+            itemRegistryEvent.getRegistry().registerAll(ModItems.ITEMS.toArray(new Item[0]));
         }
     }
 }
