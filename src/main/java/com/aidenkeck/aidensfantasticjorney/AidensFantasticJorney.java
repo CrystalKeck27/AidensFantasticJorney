@@ -1,10 +1,14 @@
 package com.aidenkeck.aidensfantasticjorney;
 
+import com.aidenkeck.aidensfantasticjorney.setup.ClientProxy;
+import com.aidenkeck.aidensfantasticjorney.setup.IProxy;
+import com.aidenkeck.aidensfantasticjorney.setup.ServerProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -21,6 +25,8 @@ import java.util.stream.Collectors;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("aidensfantasticjorney")
 public class AidensFantasticJorney {
+
+    public static IProxy proxy = DistExecutor.runForDist(() -> ClientProxy::new, () -> ServerProxy::new);
 
     private static final Logger LOGGER = LogManager.getLogger();
 
@@ -42,7 +48,7 @@ public class AidensFantasticJorney {
     public static class RegistryEvents {
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
-            // register a new block here
+            // register blocks here
             LOGGER.info("HELLO from Register Block");
         }
     }
