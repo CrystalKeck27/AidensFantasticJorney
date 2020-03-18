@@ -13,4 +13,8 @@ public class ModItems {
     public static final Item YOGURT = new ItemYogurt("yogurt", 3, 2.4f);
     @ObjectHolder("aidensfantasticjorney:yogurt_sweetberry")
     public static final Item YOGURT_SWEETBERRY = new ItemYogurt("yogurt_sweetberry", 4, 5.4f);
+    @ObjectHolder("aidensfantasticjorney:yogurt_chocolate")
+    public static final Item YOGURT_CHOCOLATE = new ItemYogurt("yogurt_chocolate", 5, 1.2f);
+    @ObjectHolder("aidensfantasticjorney:yogurt_watermelon")
+    public static final Item YOGURT_WATERMELON = new ItemYogurt("yogurt_watermelon", 5, 6.0f);
 }

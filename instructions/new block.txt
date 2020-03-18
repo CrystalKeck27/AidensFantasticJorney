@@ -1,0 +1,14 @@
+How to make a new block:
+
+1. Decide if the block needs a new class or if it can use one that has already been built
+2. Make the new class if necessary
+3. Add block to the ModBlocks class (Use the @ObjectHolder tag)
+4. Add blockstates tp /resources/assets/aidensfantasticjorney/blockstates
+5. Add block model to /resources/assets/aidensfantasticjorney/models/block
+6. Add block texture to /resources/assets/aidensfantasticjorney/textures/block
+7. Add entry in /resources/assets/aidensfantasticjorney/lang/en_us.json for the block name
+8. Add crafting recipes in /resources/data/aidensfantasticjorney/recipes if applicable
+
+Voila!
+
+If you are stuck feel free to use other blocks as a reference

@@ -1,0 +1,13 @@
+How to make a new item:
+
+1. Decide if the item needs a new class or if it can use one that has already been built
+2. Make the new class if necessary
+3. Add item to the ModItems class (Use the @ObjectHolder tag)
+4. Add item model to /resources/assets/aidensfantasticjorney/models/item
+5. Add item texture to /resources/assets/aidensfantasticjorney/textures/item
+6. Add entry in /resources/assets/aidensfantasticjorney/lang/en_us.json for the item name
+7. Add crafting recipes in /resources/data/aidensfantasticjorney/recipes if applicable
+
+Voila!
+
+If you are stuck feel free to use other items as a reference
