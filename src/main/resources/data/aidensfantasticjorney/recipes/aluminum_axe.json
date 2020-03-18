@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " II",
+    " SI",
+    " S "
+  ],
+  "key": {
+    "I": {
+      "item": "aidensfantasticjorney:aluminum_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "aidensfantasticjorney:aluminum_axe"
+  }
+}
