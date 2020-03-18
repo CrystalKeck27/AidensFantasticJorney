@@ -1,0 +1,8 @@
+How to get the .png of any minecraft texture
+
+1. Navigate to External Libraries/Gradle: net.minecraft:client:extra:1.14.4/client-extra.jar/assets/minecraft/textures
+2. Find the texture to copy and open it
+3. Right-click -> Refactor -> Copy File... (or F5)
+4. Place in the desired directory
+
+Voila!
