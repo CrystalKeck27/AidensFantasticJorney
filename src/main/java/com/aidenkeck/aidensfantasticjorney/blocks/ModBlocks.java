@@ -11,9 +11,9 @@ import java.util.List;
 public class ModBlocks {
     public static final List<Block> BLOCKS = new ArrayList<>();
 
-    @ObjectHolder("aidensfantasticjorney:not_iron")
-    public static final Block NOT_IRON = new BlockBase("not_iron",
+    @ObjectHolder("aidensfantasticjorney:aluminum_block")
+    public static final Block ALUMINUM_BLOCK = new BlockBase("aluminum_block",
             Block.Properties.create(Material.IRON));
     @ObjectHolder("aidensfantasticjorney:aluminum_ore")
-    public static final Block ALUMINUM_ORE = new OreBase("aluminum_ore");
+    public static final Block ALUMINUM_ORE = new OreBase("aluminum_ore", 1);
 }

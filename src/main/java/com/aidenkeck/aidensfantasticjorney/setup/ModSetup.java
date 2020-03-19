@@ -8,7 +8,7 @@ public class ModSetup {
     public static ItemGroup itemGroup = new ItemGroup("aidensfantasticjorney") {
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(ModBlocks.NOT_IRON);
+            return new ItemStack(ModBlocks.ALUMINUM_BLOCK);
         }
     };
 }

@@ -1,19 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "II",
-    "S ",
-    "S "
+    "III",
+    "III",
+    "III"
   ],
   "key": {
     "I": {
       "item": "aidensfantasticjorney:aluminum_ingot"
-    },
-    "S": {
-      "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "aidensfantasticjorney:aluminum_hoe"
+    "item": "aidensfantasticjorney:aluminum_block"
   }
 }

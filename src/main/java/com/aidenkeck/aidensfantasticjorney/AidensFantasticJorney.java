@@ -6,7 +6,17 @@ import com.aidenkeck.aidensfantasticjorney.setup.ClientProxy;
 import com.aidenkeck.aidensfantasticjorney.setup.IProxy;
 import com.aidenkeck.aidensfantasticjorney.setup.ServerProxy;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.client.Minecraft;
 import net.minecraft.item.Item;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.Biomes;
+import net.minecraft.world.biome.provider.OverworldBiomeProvider;
+import net.minecraft.world.gen.GenerationStage;
+import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.world.gen.placement.CountRangeConfig;
+import net.minecraft.world.gen.placement.Placement;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
@@ -15,6 +25,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.Collections;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("aidensfantasticjorney")
@@ -34,6 +46,9 @@ public class AidensFantasticJorney {
     }
 
     private void setup(final FMLCommonSetupEvent event) {
+        for (Biome biome : Biome.BIOMES) {
+            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.ALUMINUM_ORE.getDefaultState(), 9), Placement.COUNT_RANGE, new CountRangeConfig(20, 0, 0, 64)));
+        }
     }
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD

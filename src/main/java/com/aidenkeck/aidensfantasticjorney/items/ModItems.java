@@ -28,6 +28,8 @@ public class ModItems {
     @ObjectHolder("aidensfantasticjorney:aluminum_hoe")
     public static final Item ALUMINUM_HOE = new ItemHoe("aluminum_hoe", ModTiers.ALUMINUM);
 
+    @ObjectHolder("aidensfantasticjorney:yogurt_container")
+    public static final Item YOGURT_CONTAINER = new ItemBase("yogurt_container", new Item.Properties());
     @ObjectHolder("aidensfantasticjorney:yogurt")
     public static final Item YOGURT = new ItemYogurt("yogurt", 3, 2.4f);
     @ObjectHolder("aidensfantasticjorney:yogurt_sweetberry")

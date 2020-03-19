@@ -7,11 +7,16 @@ import net.minecraft.block.OreBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraftforge.common.ToolType;
 
 public class OreBase extends OreBlock {
-    public OreBase(String name) {
-        super(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 3.0F));
+    public OreBase(String name, int harvestLevel) {
+        super(Block.Properties.create(Material.ROCK)
+                .hardnessAndResistance(3.0F, 3.0F)
+                .harvestTool(ToolType.PICKAXE)
+                .harvestLevel(harvestLevel));
         setRegistryName(name);
+
 
         ModBlocks.BLOCKS.add(this);
         Item.Properties itemProperties = new Item.Properties()

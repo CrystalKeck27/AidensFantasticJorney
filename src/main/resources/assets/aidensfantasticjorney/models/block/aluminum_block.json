@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "aidensfantasticjorney:block/aluminum_block"
+  }
+}
