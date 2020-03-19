@@ -14,4 +14,6 @@ public class ModBlocks {
     @ObjectHolder("aidensfantasticjorney:not_iron")
     public static final Block NOT_IRON = new BlockBase("not_iron",
             Block.Properties.create(Material.IRON));
+    @ObjectHolder("aidensfantasticjorney:aluminum_ore")
+    public static final Block ALUMINUM_ORE = new OreBase("aluminum_ore");
 }
