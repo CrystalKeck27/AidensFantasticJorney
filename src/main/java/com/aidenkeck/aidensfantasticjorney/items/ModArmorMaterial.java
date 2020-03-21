@@ -1,5 +1,6 @@
 package com.aidenkeck.aidensfantasticjorney.items;
 
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.Item;
@@ -11,6 +12,7 @@ import net.minecraft.util.SoundEvents;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
+import javax.annotation.Nonnull;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements IArmorMaterial {
@@ -26,7 +28,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
     private final float toughness;
     private final LazyLoadBase<Ingredient> repairMaterial;
 
-    private ModArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmounts, int enchantability, SoundEvent equipSound, float toughness, Item repairMaterial) {
+    ModArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmounts, int enchantability, SoundEvent equipSound, float toughness, Item repairMaterial) {
         this.name = name;
         this.maxDamageFactor = maxDamageFactor;
         this.damageReductionAmountArray = damageReductionAmounts;
@@ -48,6 +50,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
         return this.enchantability;
     }
 
+    @Nonnull
     public SoundEvent getSoundEvent() {
         return this.soundEvent;
     }
