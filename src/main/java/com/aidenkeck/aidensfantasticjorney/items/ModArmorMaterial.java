@@ -58,7 +58,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
 
     @OnlyIn(Dist.CLIENT)
     public String getName() {
-        return this.name;
+        return "aidensfantasticjorney:" + this.name;
     }
 
     public float getToughness() {

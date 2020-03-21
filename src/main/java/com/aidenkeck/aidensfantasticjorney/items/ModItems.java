@@ -18,6 +18,8 @@ public class ModItems {
 
     @ObjectHolder("aidensfantasticjorney:aluminum_ingot")
     public static final Item ALUMINUM_INGOT = register("aluminum_ingot", new ItemBase());
+    @ObjectHolder("aidensfantasticjorney:aluminum_nugget")
+    public static final Item ALUMINUM_NUGGET = register("aluminum_nugget", new ItemBase());
 
     @ObjectHolder("aidensfantasticjorney:aluminum_sword")
     public static final Item ALUMINUM_SWORD = register("aluminum_sword", new ItemSword(ModTiers.ALUMINUM));

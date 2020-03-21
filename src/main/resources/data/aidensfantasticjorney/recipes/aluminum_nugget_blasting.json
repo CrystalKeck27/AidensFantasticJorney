@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": [
+    {
+      "item": "aidensfantasticjorney:aluminum_pickaxe"
+    },
+    {
+      "item": "aidensfantasticjorney:aluminum_shovel"
+    },
+    {
+      "item": "aidensfantasticjorney:aluminum_axe"
+    },
+    {
+      "item": "aidensfantasticjorney:aluminum_hoe"
+    },
+    {
+      "item": "aidensfantasticjorney:aluminum_sword"
+    },
+    {
+      "item": "aidensfantasticjorney:aluminum_helmet"
+    },
+    {
+      "item": "aidensfantasticjorney:aluminum_chestplate"
+    },
+    {
+      "item": "aidensfantasticjorney:aluminum_leggings"
+    },
+    {
+      "item": "aidensfantasticjorney:aluminum_boots"
+    }
+  ],
+  "result": "aidensfantasticjorney:aluminum_nugget",
+  "experience": 0.1,
+  "cookingtime": 100
+}
