@@ -3,6 +3,7 @@
   "block.aidensfantasticjorney.aluminum_ore": "Aluminum Ore",
 
   "item.aidensfantasticjorney.yogurt_container": "Yogurt Container",
+  "item.aidensfantasticjorney.dirty_yogurt_container": "Dirty Yogurt Container",
   "item.aidensfantasticjorney.yogurt": "Yogurt",
   "item.aidensfantasticjorney.yogurt_sweetberry": "Sweetberry Yogurt",
   "item.aidensfantasticjorney.yogurt_watermelon": "Watermelon Yogurt",
@@ -18,6 +19,7 @@
   "item.aidensfantasticjorney.aluminum_leggings": "Aluminum Leggings",
   "item.aidensfantasticjorney.aluminum_boots": "Aluminum Boots",
   "item.aidensfantasticjorney.aluminum_ingot": "Aluminum Ingot",
+  "item.aidensfantasticjorney.aluminum_nugget": "Aluminum Nugget",
 
   "_comment": "Creative Tabs",
   "itemGroup.aidensfantasticjorney": "Aiden's Fantastic Jorney"

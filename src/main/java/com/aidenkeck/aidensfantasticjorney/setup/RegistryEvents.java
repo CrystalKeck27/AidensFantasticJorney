@@ -38,8 +38,7 @@ public class RegistryEvents {
     public static void onBiomesRegistry(final RegistryEvent.Register<Biome> biomeRegistryEvent) {
         biomeRegistryEvent.getRegistry().registerAll(ModBiomes.BIOMES.toArray(new Biome[0]));
 
-        BiomeDictionary.addTypes(ModBiomes.ANDESITE_HILLS, BiomeDictionary.Type.BEACH, BiomeDictionary.Type.COLD, BiomeDictionary.Type.DEAD, BiomeDictionary.Type.MOUNTAIN);
-        BiomeManager.addSpawnBiome(ModBiomes.ANDESITE_HILLS);
-        LOGGER.info("REGISTRY: BIOME");
+        //BiomeDictionary.addTypes(ModBiomes.ANDESITE_HILLS, BiomeDictionary.Type.BEACH, BiomeDictionary.Type.COLD, BiomeDictionary.Type.DEAD, BiomeDictionary.Type.MOUNTAIN);
+        //BiomeManager.addSpawnBiome(ModBiomes.ANDESITE_HILLS);
     }
 }

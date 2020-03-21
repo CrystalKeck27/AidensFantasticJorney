@@ -43,6 +43,8 @@ public class ModItems {
 
     @ObjectHolder("aidensfantasticjorney:yogurt_container")
     public static final Item YOGURT_CONTAINER = register("yogurt_container", new ItemBase());
+    @ObjectHolder("aidensfantasticjorney:dirty_yogurt_container")
+    public static final Item DIRTY_YOGURT_CONTAINER = register("dirty_yogurt_container", new DirtyContainerItem(YOGURT_CONTAINER));
     @ObjectHolder("aidensfantasticjorney:yogurt")
     public static final Item YOGURT = register("yogurt", new ItemYogurt( 3, 2.4f));
     @ObjectHolder("aidensfantasticjorney:yogurt_sweetberry")
