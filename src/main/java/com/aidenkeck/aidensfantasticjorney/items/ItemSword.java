@@ -6,17 +6,11 @@ import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
 
 public class ItemSword extends SwordItem {
-    public ItemSword(String name, IItemTier itemTier, int addedAttack, float attackSpeed, Properties properties) {
+    public ItemSword(IItemTier itemTier, int addedAttack, float attackSpeed, Properties properties) {
         super(itemTier, addedAttack, attackSpeed, properties);
-        setRegistryName(name);
-
-        ModItems.ITEMS.add(this);
     }
 
-    public ItemSword(String name, IItemTier itemTier){
+    public ItemSword(IItemTier itemTier){
         super(itemTier, 3, -2.4f, new Item.Properties().group(ModSetup.itemGroup).maxStackSize(1));
-        setRegistryName(name);
-
-        ModItems.ITEMS.add(this);
     }
 }
