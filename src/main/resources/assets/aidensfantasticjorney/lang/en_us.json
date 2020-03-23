@@ -21,6 +21,9 @@
   "item.aidensfantasticjorney.aluminum_ingot": "Aluminum Ingot",
   "item.aidensfantasticjorney.aluminum_nugget": "Aluminum Nugget",
 
+  "item.aidensfantasticjorney.doohickie_egg": "Doohickie Egg",
+  "entity.aidensfantasticjorney.doohickie": "Doohickie",
+
   "_comment": "Creative Tabs",
   "itemGroup.aidensfantasticjorney": "Aiden's Fantastic Jorney"
 }

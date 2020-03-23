@@ -1,10 +1,14 @@
 package com.aidenkeck.aidensfantasticjorney.items;
 
+import com.aidenkeck.aidensfantasticjorney.entities.ModEntities;
+import com.aidenkeck.aidensfantasticjorney.setup.ModSetup;
 import com.aidenkeck.aidensfantasticjorney.setup.RegistryEvents;
+import net.minecraft.entity.EntityType;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.IItemProvider;
 import net.minecraftforge.common.ToolType;
@@ -53,6 +57,11 @@ public class ModItems {
     public static final Item YOGURT_CHOCOLATE = register("yogurt_chocolate", new ItemYogurt(5, 1.2f));
     @ObjectHolder("aidensfantasticjorney:yogurt_watermelon")
     public static final Item YOGURT_WATERMELON = register("yogurt_watermelon", new ItemYogurt(5, 6.0f));
+
+    @ObjectHolder("aidensfantasticjorney:doohickie_egg")
+    public static final Item DOOHICKIE_EGG = register("doohickie_egg",
+            new SpawnEggItem(ModEntities.DOOHICKIE, 0xFFFFFF, 0x0000FF,
+                    new Item.Properties().group(ModSetup.itemGroup)));
 
     private static Item register(String name, Item item) {
         item.setRegistryName(name);
